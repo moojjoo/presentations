@@ -1,9 +1,8 @@
 using System.ComponentModel.DataAnnotations.Schema;
-using FromSQL.Models;
+using FromSQLDbQuery.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
 
-namespace FromSQL.Context
+namespace FromSQLDbQuery.Context
 {
     public class BloggingContext : DbContext
     {
@@ -11,6 +10,8 @@ namespace FromSQL.Context
 
         [NotMapped]
         public DbSet<ShortBlog> ShortBlogs { get; set; }
+
+        public DbQuery<ShortBlogQuery> ShortBlogsQuery { get; set; }
 
         public BloggingContext()
         {
@@ -24,7 +25,7 @@ namespace FromSQL.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionString = @"Server=(localdb)\mssqllocaldb;Database=Demo.FromSQL;Trusted_Connection=True;";
+            var connectionString = @"Server=(localdb)\mssqllocaldb;Database=Demo.FromSQL;Integrated Security=true;";
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(connectionString);
@@ -34,6 +35,7 @@ namespace FromSQL.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ShortBlog>().HasKey(x => x.BlogId);
+            //modelBuilder.Query<ShortBlogQuery>().ToView("ViewName");
         }
     }
 }

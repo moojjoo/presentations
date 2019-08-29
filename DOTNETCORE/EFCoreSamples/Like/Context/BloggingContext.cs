@@ -1,7 +1,7 @@
-using Like.Models;
+using HelperFunctions.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Like.Context
+namespace HelperFunctions.Context
 {
     public class BloggingContext : DbContext
     {
@@ -18,7 +18,7 @@ namespace Like.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionString = @"Server=(localdb)\mssqllocaldb;Database=Demo.Like;Trusted_Connection=True;";
+            var connectionString = @"Server=(localdb)\mssqllocaldb;Database=Demo.Like;Integrated Security=true;";
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(connectionString);

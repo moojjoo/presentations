@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PerformanceEfCore</RootNamespace>
     <AssemblyName>PerformanceEfCore</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,53 +31,51 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.EntityFrameworkCore, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.EntityFrameworkCore.2.1.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=2.2.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.2.2.4\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=2.2.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Abstractions.2.2.4\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.EntityFrameworkCore.Attributes, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Attributes.2.1.0-preview1-final\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Attributes.dll</HintPath>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational, Version=2.2.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Relational.2.2.4\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.EntityFrameworkCore.Relational, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Relational.2.1.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    <Reference Include="Microsoft.EntityFrameworkCore.SqlServer, Version=2.2.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.SqlServer.2.2.4\lib\netstandard2.0\Microsoft.EntityFrameworkCore.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.EntityFrameworkCore.SqlServer, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.EntityFrameworkCore.SqlServer.2.1.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.SqlServer.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.Configuration, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Configuration.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.2.2.4\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.2.2.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.2.1.1\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Logging, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Logging.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Options, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.Options, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Options.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Extensions.Primitives, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Primitives.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
       <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
@@ -94,11 +93,11 @@
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.SqlClient, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Data.SqlClient.4.5.1\lib\net461\System.Data.SqlClient.dll</HintPath>
+    <Reference Include="System.Data.SqlClient, Version=4.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.6.0\lib\net461\System.Data.SqlClient.dll</HintPath>
     </Reference>
-    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.5.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.3.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.5.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
     <Reference Include="System.Interactive.Async, Version=3.2.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Interactive.Async.3.2.0\lib\net46\System.Interactive.Async.dll</HintPath>
@@ -112,7 +111,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
+      <HintPath>..\packages\System.Memory.4.5.2\lib\netstandard2.0\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -122,15 +121,17 @@
       <HintPath>..\packages\System.Reflection.4.3.0\lib\net462\System.Reflection.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Runtime">
-      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.1\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.Extensions">
-      <HintPath>..\packages\System.Runtime.Extensions.4.3.0\lib\net462\System.Runtime.Extensions.dll</HintPath>
+    <Reference Include="System.Runtime.Extensions, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Extensions.4.3.1\lib\net462\System.Runtime.Extensions.dll</HintPath>
+      <Private>True</Private>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Xml.Linq" />
@@ -141,78 +142,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EFCore\ModelForTesting.cs" />
-    <Compile Include="EFCore\Context\AdventureWorksContext.cs" />
-    <Compile Include="EFCore\Models\Address.cs" />
-    <Compile Include="EFCore\Models\AddressType.cs" />
-    <Compile Include="EFCore\Models\AWBuildVersion.cs" />
-    <Compile Include="EFCore\Models\BillOfMaterials.cs" />
-    <Compile Include="EFCore\Models\BusinessEntity.cs" />
-    <Compile Include="EFCore\Models\BusinessEntityAddress.cs" />
-    <Compile Include="EFCore\Models\BusinessEntityContact.cs" />
-    <Compile Include="EFCore\Models\ContactType.cs" />
-    <Compile Include="EFCore\Models\CountryRegion.cs" />
-    <Compile Include="EFCore\Models\CountryRegionCurrency.cs" />
-    <Compile Include="EFCore\Models\CreditCard.cs" />
-    <Compile Include="EFCore\Models\Culture.cs" />
-    <Compile Include="EFCore\Models\Currency.cs" />
-    <Compile Include="EFCore\Models\CurrencyRate.cs" />
-    <Compile Include="EFCore\Models\Customer.cs" />
-    <Compile Include="EFCore\Models\DatabaseLog.cs" />
-    <Compile Include="EFCore\Models\Department.cs" />
-    <Compile Include="EFCore\Models\EmailAddress.cs" />
-    <Compile Include="EFCore\Models\Employee.cs" />
-    <Compile Include="EFCore\Models\EmployeeDepartmentHistory.cs" />
-    <Compile Include="EFCore\Models\EmployeePayHistory.cs" />
-    <Compile Include="EFCore\Models\ErrorLog.cs" />
-    <Compile Include="EFCore\Models\Illustration.cs" />
-    <Compile Include="EFCore\Models\JobCandidate.cs" />
-    <Compile Include="EFCore\Models\Location.cs" />
-    <Compile Include="EFCore\Models\Password.cs" />
-    <Compile Include="EFCore\Models\Person.cs" />
-    <Compile Include="EFCore\Models\PersonCreditCard.cs" />
-    <Compile Include="EFCore\Models\PersonPhone.cs" />
-    <Compile Include="EFCore\Models\PhoneNumberType.cs" />
-    <Compile Include="EFCore\Models\Product.cs" />
-    <Compile Include="EFCore\Models\ProductCategory.cs" />
-    <Compile Include="EFCore\Models\ProductCostHistory.cs" />
-    <Compile Include="EFCore\Models\ProductDescription.cs" />
-    <Compile Include="EFCore\Models\ProductInventory.cs" />
-    <Compile Include="EFCore\Models\ProductListPriceHistory.cs" />
-    <Compile Include="EFCore\Models\ProductModel.cs" />
-    <Compile Include="EFCore\Models\ProductModelIllustration.cs" />
-    <Compile Include="EFCore\Models\ProductModelProductDescriptionCulture.cs" />
-    <Compile Include="EFCore\Models\ProductPhoto.cs" />
-    <Compile Include="EFCore\Models\ProductProductPhoto.cs" />
-    <Compile Include="EFCore\Models\ProductReview.cs" />
-    <Compile Include="EFCore\Models\ProductSubcategory.cs" />
-    <Compile Include="EFCore\Models\ProductVendor.cs" />
-    <Compile Include="EFCore\Models\PurchaseOrderDetail.cs" />
-    <Compile Include="EFCore\Models\PurchaseOrderHeader.cs" />
-    <Compile Include="EFCore\Models\SalesOrderDetail.cs" />
-    <Compile Include="EFCore\Models\SalesOrderHeader.cs" />
-    <Compile Include="EFCore\Models\SalesOrderHeaderSalesReason.cs" />
-    <Compile Include="EFCore\Models\SalesPerson.cs" />
-    <Compile Include="EFCore\Models\SalesPersonQuotaHistory.cs" />
-    <Compile Include="EFCore\Models\SalesReason.cs" />
-    <Compile Include="EFCore\Models\SalesTaxRate.cs" />
-    <Compile Include="EFCore\Models\SalesTerritory.cs" />
-    <Compile Include="EFCore\Models\SalesTerritoryHistory.cs" />
-    <Compile Include="EFCore\Models\ScrapReason.cs" />
-    <Compile Include="EFCore\Models\Shift.cs" />
-    <Compile Include="EFCore\Models\ShipMethod.cs" />
-    <Compile Include="EFCore\Models\ShoppingCartItem.cs" />
-    <Compile Include="EFCore\Models\SpecialOffer.cs" />
-    <Compile Include="EFCore\Models\SpecialOfferProduct.cs" />
-    <Compile Include="EFCore\Models\StateProvince.cs" />
-    <Compile Include="EFCore\Models\Store.cs" />
-    <Compile Include="EFCore\Models\TransactionHistory.cs" />
-    <Compile Include="EFCore\Models\TransactionHistoryArchive.cs" />
-    <Compile Include="EFCore\Models\UnitMeasure.cs" />
-    <Compile Include="EFCore\Models\Vendor.cs" />
-    <Compile Include="EFCore\Models\WorkOrder.cs" />
-    <Compile Include="EFCore\Models\WorkOrderRouting.cs" />
+    <Compile Include="EfStructures\ModelForTesting.cs" />
+    <Compile Include="EfStructures\Context\AdventureWorksContext.cs" />
+    <Compile Include="EfStructures\Models\Address.cs" />
+    <Compile Include="EfStructures\Models\AddressType.cs" />
+    <Compile Include="EfStructures\Models\AWBuildVersion.cs" />
+    <Compile Include="EfStructures\Models\BillOfMaterials.cs" />
+    <Compile Include="EfStructures\Models\BusinessEntity.cs" />
+    <Compile Include="EfStructures\Models\BusinessEntityAddress.cs" />
+    <Compile Include="EfStructures\Models\BusinessEntityContact.cs" />
+    <Compile Include="EfStructures\Models\ContactType.cs" />
+    <Compile Include="EfStructures\Models\CountryRegion.cs" />
+    <Compile Include="EfStructures\Models\CountryRegionCurrency.cs" />
+    <Compile Include="EfStructures\Models\CreditCard.cs" />
+    <Compile Include="EfStructures\Models\Culture.cs" />
+    <Compile Include="EfStructures\Models\Currency.cs" />
+    <Compile Include="EfStructures\Models\CurrencyRate.cs" />
+    <Compile Include="EfStructures\Models\Customer.cs" />
+    <Compile Include="EfStructures\Models\DatabaseLog.cs" />
+    <Compile Include="EfStructures\Models\Department.cs" />
+    <Compile Include="EfStructures\Models\EmailAddress.cs" />
+    <Compile Include="EfStructures\Models\Employee.cs" />
+    <Compile Include="EfStructures\Models\EmployeeDepartmentHistory.cs" />
+    <Compile Include="EfStructures\Models\EmployeePayHistory.cs" />
+    <Compile Include="EfStructures\Models\ErrorLog.cs" />
+    <Compile Include="EfStructures\Models\Illustration.cs" />
+    <Compile Include="EfStructures\Models\JobCandidate.cs" />
+    <Compile Include="EfStructures\Models\Location.cs" />
+    <Compile Include="EfStructures\Models\Password.cs" />
+    <Compile Include="EfStructures\Models\Person.cs" />
+    <Compile Include="EfStructures\Models\PersonCreditCard.cs" />
+    <Compile Include="EfStructures\Models\PersonPhone.cs" />
+    <Compile Include="EfStructures\Models\PhoneNumberType.cs" />
+    <Compile Include="EfStructures\Models\Product.cs" />
+    <Compile Include="EfStructures\Models\ProductCategory.cs" />
+    <Compile Include="EfStructures\Models\ProductCostHistory.cs" />
+    <Compile Include="EfStructures\Models\ProductDescription.cs" />
+    <Compile Include="EfStructures\Models\ProductInventory.cs" />
+    <Compile Include="EfStructures\Models\ProductListPriceHistory.cs" />
+    <Compile Include="EfStructures\Models\ProductModel.cs" />
+    <Compile Include="EfStructures\Models\ProductModelIllustration.cs" />
+    <Compile Include="EfStructures\Models\ProductModelProductDescriptionCulture.cs" />
+    <Compile Include="EfStructures\Models\ProductPhoto.cs" />
+    <Compile Include="EfStructures\Models\ProductProductPhoto.cs" />
+    <Compile Include="EfStructures\Models\ProductReview.cs" />
+    <Compile Include="EfStructures\Models\ProductSubcategory.cs" />
+    <Compile Include="EfStructures\Models\ProductVendor.cs" />
+    <Compile Include="EfStructures\Models\PurchaseOrderDetail.cs" />
+    <Compile Include="EfStructures\Models\PurchaseOrderHeader.cs" />
+    <Compile Include="EfStructures\Models\SalesOrderDetail.cs" />
+    <Compile Include="EfStructures\Models\SalesOrderHeader.cs" />
+    <Compile Include="EfStructures\Models\SalesOrderHeaderSalesReason.cs" />
+    <Compile Include="EfStructures\Models\SalesPerson.cs" />
+    <Compile Include="EfStructures\Models\SalesPersonQuotaHistory.cs" />
+    <Compile Include="EfStructures\Models\SalesReason.cs" />
+    <Compile Include="EfStructures\Models\SalesTaxRate.cs" />
+    <Compile Include="EfStructures\Models\SalesTerritory.cs" />
+    <Compile Include="EfStructures\Models\SalesTerritoryHistory.cs" />
+    <Compile Include="EfStructures\Models\ScrapReason.cs" />
+    <Compile Include="EfStructures\Models\Shift.cs" />
+    <Compile Include="EfStructures\Models\ShipMethod.cs" />
+    <Compile Include="EfStructures\Models\ShoppingCartItem.cs" />
+    <Compile Include="EfStructures\Models\SpecialOffer.cs" />
+    <Compile Include="EfStructures\Models\SpecialOfferProduct.cs" />
+    <Compile Include="EfStructures\Models\StateProvince.cs" />
+    <Compile Include="EfStructures\Models\Store.cs" />
+    <Compile Include="EfStructures\Models\TransactionHistory.cs" />
+    <Compile Include="EfStructures\Models\TransactionHistoryArchive.cs" />
+    <Compile Include="EfStructures\Models\UnitMeasure.cs" />
+    <Compile Include="EfStructures\Models\Vendor.cs" />
+    <Compile Include="EfStructures\Models\WorkOrder.cs" />
+    <Compile Include="EfStructures\Models\WorkOrderRouting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

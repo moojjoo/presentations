@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace FromSQL.Models
+﻿namespace FromSQLDbQuery.Models
 {
     public class ShortBlog
     {
